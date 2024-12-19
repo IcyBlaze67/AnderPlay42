@@ -1,0 +1,89 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Контейнер с заголовком и кнопками */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Общие стили кнопок */
+.button {
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Стиль кнопки YouTube */
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #e60000;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Стиль кнопки Discord */
+.discord {
+    background-color: #7289da;
+}
+
+.discord:hover {
+    background-color: #5b6eae;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(114, 137, 218, 0.3);
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .button {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+}
